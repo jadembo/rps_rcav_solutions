@@ -3,11 +3,11 @@
     <div class="panel panel-success">
       <div class="panel-heading">
         <h2 class="panel-title text-center">
-          Paper
+          <%= @user_move.capitalize %>
         </h2>
       </div>
       <div class="panel-body">
-        <img class="img-responsive" src="/assets/images/paper.png">
+        <img class="img-responsive" src="/assets/images/<%= @user_move %>.png">
       </div>
     </div>
   </div>
@@ -27,7 +27,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-8 col-md-offset-2">
     <div class="well text-center">
       <h1>
         <% if @outcome == "won" %>
